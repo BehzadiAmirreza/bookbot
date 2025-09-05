@@ -16,3 +16,8 @@ def count_characters(text):
                 char_dict[char] = 1
 
     return char_dict
+
+def sorted_list(char_dict):
+    """Returns a sorted list of tuples (char, count), sorted by count descending."""
+    sorted_chars = sorted(char_dict.items(), key=lambda item: item[1], reverse=True)
+    return sorted_chars
